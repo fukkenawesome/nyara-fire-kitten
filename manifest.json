@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Nyara Fire Kitten",
+  "description": "THIS IS A EXTENSION FOR TOPS ONLY",
+  "version": "1.0",
+  "author": "fukkenawesome",
+  "action": {
+    "default_popup": "meow.html",
+    "default_icon": "nyara.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "<all_urls>"
+      ],
+	  "exclude_matches": [
+            "https://*.youtube.com/*",
+            "https://*.google.com/*"
+        ]
+    }
+  ],
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  }
+}
